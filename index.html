@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <a href="#about">Home</a>
+        <a href="#work">Work</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+<main>
+        
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I am learning web development!</p>
+        </section>
+
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="https://i.pinimg.com/736x/65/35/b3/6535b36eacc80c6c91b4ad5603f5082e.jpg" alt="Profile Photo" width="150">
+            <p>Hello! I am a beginner web developer passionate about learning how to code and build websites.</p>
+        </section>
+        <!-- Work / Projects Section -->
+        <section id="work">
+             <h2>My Projects</h2>
+             <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Brain Health Expert</td>
+                        <td>An interactive platform focused on cognitive health assessments, brain fitness strategies, and personalized wellness resources.</td>
+                    </tr>
+                    <tr>
+                        <td>Change Your Brain</td>
+                        <td>A digital tool and guide exploring neuroplasticity techniques to help users reframe habits and optimize mental performance.</td>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0SPC_Q7-k40?si=s1HX-W8l3Pk74enP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </tr>
+                    <tr>
+                        <td>Change Your Life</td>
+                        <td>A comprehensive personal growth application designed to set actionable goals, track daily habits, and build sustainable lifestyle changes.</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <p>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </p>
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </p>
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="30" required placeholder="Your Message..."></textarea>
+                </p>
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </section>
+    </main>
+        <footer>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
