@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+header {
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* الروابط تجي في آخر الشريط */
+    align-items: center;
+    gap: 30px; /* مسافة بين كل رابط ورابط */
+    padding: 15px 40px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; 
+    margin: 0;
+    padding: 15px 0;
+}
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.content-section {
+    background-color: var(--card-bg);
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+#about {
+    text-align: center; 
+    padding: 20px;
+}
+#about .profile-img {
+    display: block;
+    margin: 20px auto;   
+    width: 180px;        
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%; 
+    border: 3px solid var(--accent-color); 
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);  
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    border-radius: 6px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+.btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    margin-top: 40px;
+}
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;  
+    --bg-color: #f4f6f9;      
+    --text-color: #333333;    
+    --card-bg: #ffffff;       
+}
